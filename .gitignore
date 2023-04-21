@@ -21,7 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Bhandami
-src/Profile.jsx
-src/Signup.jsx

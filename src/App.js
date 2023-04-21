@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import SignupForm from './Signup';
-import ProfilePage from './Profile';
+import Signup from './Signup';
+import Profile from './Profile';
 import Navbar from "./Navbar"
 
 
@@ -16,8 +16,8 @@ const App = () => {
   return (
     <div>
       <Navbar/>
-      {users.length === 0 && <SignupForm onSubmit={handleSignup} />}
-      {users.length > 0 && <ProfilePage users={users} />}
+      {users.length === 0 && <Signup onSubmit={handleSignup} />}
+      {users.length > 0 && <Profile users={users} />}
     </div>
   );
 };
