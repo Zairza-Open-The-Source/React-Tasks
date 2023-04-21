@@ -13,11 +13,10 @@ export default function Navbar() {
         Code<span>Crushers</span>
       </p>
       <div className="nav-menu">
-        <a className="active" href="/index">
-          Home
-        </a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact Us</a>
+        <a href="/">Main</a>
+        <a href="/Project">Project</a>
+        <a href="/Achievement">Achievement</a>
+
       </div>
       <div className="mobile-nav">
         <i className="mobile-menu fa-solid fa-bars "></i>

@@ -1,69 +1,27 @@
-import React, { useState } from 'react';
-import SignupForm from './Signup';
-import ProfilePage from './Profile';
+import './App.css';
+
 import Navbar from "./Navbar"
+import Main from "./Main"
+import Project from "./Project"
+import Achievement from "./Achievement"
+
+import { BrowserRouter as Router, Route , Routes} from "react-router-dom";
 
 
-const App = () => {
-  const [users, setUsers] = useState([]);
-
-  const handleSignup = (user) => {
-    setUsers([...users, user]);
-    // Store the user data locally
-    localStorage.setItem('users', JSON.stringify(users));
-  };
-
+function App() {
   return (
-    <div>
+    <div className="App">
       <Navbar/>
-      {users.length === 0 && <SignupForm onSubmit={handleSignup} />}
-      {users.length > 0 && <ProfilePage users={users} />}
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Main/>} />
+          <Route exact path="/Project" element={<Project/>} />
+          <Route exact path="/Achievement" element={<Achievement/>} />
+        </Routes>
+      </Router>
     </div>
   );
-};
+}
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import './App.css';
-// import Signup from "./Signup"
-// import Profile from "./Profile"
-// import Navbar from "./Navbar"
-// import { BrowserRouter as Router, Route , Routes} from "react-router-dom";
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Navbar/>
-//       <Router>
-//         <Routes>
-//           <Route exact path="/" element={<Signup/>} />
-//           <Route exact path="/profile" element={<Profile/>} />
-//         </Routes>
-//       </Router>
-//     </div>
-//   );
-// }
-
-// export default App;
 
