@@ -19,7 +19,10 @@ const Navbar = () => {
          <NavLink to="achievements">ACHIEVEMENTS</NavLink> 
          </li>
          <li>
-            <AccountCircleIcon fontSize='large'/>
+         <NavLink to="sign-up">SIGN UP</NavLink> 
+         </li>
+         <li>
+          <NavLink to= "/account"><AccountCircleIcon fontSize='large'/></NavLink>  
          </li>
          </div>
        </ul>
