@@ -1,0 +1,136 @@
+body{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.ele input{
+    border: none;
+    border-bottom: 2px solid #121212;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 15rem;
+}
+
+.slbtn{
+    border-radius: 8px;
+    background-color: aqua;
+    font-size: 1.2rem;
+    padding: 6px 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.slform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+.cardup{
+    width: 15rem;
+    padding: 10px;
+    background-color:rgb(230, 243, 255);
+    border-radius: 8px;
+}
+
+.totaldown{
+    border-radius: 10px;
+    width: 30rem;
+    box-shadow: 8px 1px 10px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 5px;
+}
+
+.homeui{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.leftc{
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    /* z-index: 1; */
+    background-color: aliceblue;
+    margin-right: 50vw;
+}
+
+
+.rightc{
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background-color: #fff;
+    margin-left: 50vw;
+    /* z-index: 1; */
+}
+
+.homeui h5, .homeui h1{
+    z-index: 2;
+}
+
+.aspan{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.aboutpage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    line-height: 3rem;
+    top: 3rem;
+}
+
+.errorpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.err{
+    position: relative;
+    width: 40rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errortxt{
+    font-size: 2rem;
+    z-index: 2;
+}
+
+.errorn{
+    position: absolute;
+    font-size: 15rem;
+    color: antiquewhite;
+}
