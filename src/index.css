@@ -5,9 +5,150 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #333;
+  font-family: "Poppins", sans-serif;
+  color: #ddd;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --btn-color: #ffc451;
+}
+
+/* Reusable porperties */
+.btn {
+  width: 100%;
+  padding: 14px 2rem;
+  border-radius: 6px;
+  background: linear-gradient(180deg, var(--first-color), var(--second-color));
+  color: #fff;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  box-shadow: 0 6px 24px hsl(43, 80%, 46%);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: 1px solid #FFCA42;
+
+}
+
+.btn:hover {
+  background: var(--btn-color);
+}
+
+/* Reusable porperties */
+
+/* Header or navbar section starts */
+
+.header {
+  width: 100%;
+  display: flex;
+  background: transparent;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  z-index: 99;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  height: 81px;
+  transition: background-color 0.4s ease;
+}
+
+.name {
+  font-size: 2rem;
+  color: white;
+  margin-inline-start: -13em;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 5px;
+  border-radius: 50px;
+}
+
+.logo {
+  display: flex;
+  font-size: 2em;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.logo p {
+  position: relative;
+  top: 50px;
+  right: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  position: relative;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: var(--btn-color);
+}
+
+.nav-menu a::before,
+.nav-menu a .active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid var(--btn-color);
+  transition: 0.4s linear;
+}
+
+.nav-menu a:hover::before,
+.nav-menu a .active::before {
+  width: 90%;
+}
+
+.scroll {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.mobile-nav {
+  display: none;
+  justify-content: center;
+}
+
+.profile p {
+  display: flex;
+  gap: 1rem;
+}
+
+/* responsive navbar */
+
+@media (max-width:992px) {
+  .btn {
+    padding: 7px 20px 8px 20px;
+    margin-right: 15px;
+  }
+}
+
+/* Header or navbar section ends */
