@@ -11,7 +11,7 @@ const SignUpForm = ({OnSubmit}) => {
   
       if (userName === '' || email ==='' || password === '') {
           alert('pls complete all inputs')
-      }
+      }   
   
     //   console.log(userName,email,password);
       OnSubmit({ userName, email, password });
