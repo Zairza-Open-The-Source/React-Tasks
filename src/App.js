@@ -13,6 +13,9 @@ function App() {
         <div class="Codespaces">
           Codespaces
         </div>
+        <div class="Marketplace">
+          Marketplace 
+        </div>  
         <div class = "Explore">
           Explore
         </div>

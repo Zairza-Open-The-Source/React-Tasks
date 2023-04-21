@@ -1,7 +1,14 @@
 .navbar{
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   border: 2px solid black;
   display: flex;
   justify-content: space-evenly;
+  padding-top: 20px;
+  background-color: aliceblue;
+}
+
+.profile img{
+  height: 30px;
+  width: 30px;
 }
